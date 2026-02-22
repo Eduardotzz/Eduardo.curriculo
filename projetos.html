@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projetos | Eduardo Henrique</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #b04a1f, #ff6a00);
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(90deg, #b04a1f, #ff6a00);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+.main-container {
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    width: 90%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    margin-bottom: 40px;
+}
+
+.card h3 {
+    color: #b04a1f;
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.tech {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.btn-github {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #b04a1f;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.btn-github:hover {
+    background: #111;
+}
+
+@media (max-width: 768px) {
+
+header {
+    flex-direction: column;
+    padding: 15px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 8px 10px;
+}
+
+.card {
+    padding: 25px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-code"></i> Eduardo.dev
+    </div>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="habilidades.html"><i class="fa-solid fa-lightbulb"></i> Habilidades</a>
+        <a href="contato.html"><i class="fa-solid fa-envelope"></i> Contato</a>
+    </nav>
+</header>
+
+<div class="main-container">
+
+    <h2 class="section-title"><i class="fa-solid fa-folder-open"></i> Meus Projetos</h2>
+
+    <!-- WORLD GUESSING GAME -->
+    <div class="card">
+        <h3>🌎 World Guessing Game – Ranking Edition</h3>
+
+        <p>
+        Projeto educacional desenvolvido em Python aplicando Programação Orientada a Objetos (POO)
+        e arquitetura MVC. O jogo utiliza a API REST Countries para desafiar o jogador
+        a descobrir países com base em dicas como Capital e Região.
+        </p>
+
+        <p>
+        A cada acerto, pontos são acumulados e, ao final, a pontuação é salva
+        em um ranking Top 5 persistente com data e hora.
+        </p>
+
+        <p class="tech">
+        🚀 Tecnologias: Python, Tkinter, SQLite3, Requests, API REST Countries
+        </p>
+
+        <a href="https://github.com/Eduardotzz/Python.poo" target="_blank" class="btn-github">
+            <i class="fa-brands fa-github"></i> Ver no GitHub
+        </a>
+    </div>
+
+    <!-- PROJETO CATIRAX (SAGA) -->
+    <div class="card">
+        <h3>🛒 Projeto CatiraX (SAGA SENAI)</h3>
+
+        <p>
+        Plataforma desenvolvida para troca e venda de produtos
+        e divulgação de serviços, com o objetivo de facilitar
+        a conexão entre usuários e promover oportunidades de negociação.
+        </p>
+
+        <p>
+        O projeto foi desenvolvido aplicando conceitos de banco de dados,
+        organização de informações e estruturação de sistema.
+        </p>
+
+        <p class="tech">
+        🚀 Tecnologias: Python, Banco de Dados, JavaScript, HTML, CSS
+        </p>
+
+        <!-- COLOQUE AQUI O LINK DO REPOSITÓRIO DO SAGA -->
+        <a href="#" class="btn-github">
+            <i class="fa-brands fa-github"></i> Ver no GitHub
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
