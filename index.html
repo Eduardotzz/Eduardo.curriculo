@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Eduardo Henrique | Desenvolvedor Full Stack</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="logo-area">
+        <div class="logo">
+            <i class="fa-solid fa-code"></i> Eduardo.dev
+        </div>
+
+        <a href="sobre.html" class="btn-sobre">
+            <i class="fa-solid fa-user"></i> Sobre Mim
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="habilidades.html"><i class="fa-solid fa-lightbulb"></i> Habilidades</a>
+        <a href="projetos.html"><i class="fa-solid fa-code"></i> Projetos</a>
+        <a href="contato.html"><i class="fa-solid fa-envelope"></i> Contato</a>
+    </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1><i class="fa-solid fa-user"></i> Eduardo Henrique</h1>
+        <h2>Desenvolvedor Full Stack em Formação</h2>
+        <p>
+            Estudante de Desenvolvimento de Sistemas pelo SENAI Betim,
+            focado na criação de soluções web modernas e bem estruturadas.
+            Trabalho com Python, Banco de Dados e tecnologias front-end,
+            buscando evolução constante para atuar profissionalmente na área.
+        </p>
+    </div>
+
+    <div class="buttons">
+        <a href="projetos.html" class="btn-marrom">
+            <i class="fa-solid fa-folder-open"></i> Ver Projetos
+        </a>
+        <a href="habilidades.html" class="btn-marrom-outline">
+            <i class="fa-solid fa-lightbulb"></i> Minhas Habilidades
+        </a>
+    </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills-container">
+    <h2 class="section-title">
+        <i class="fa-solid fa-lightbulb"></i> Minhas Habilidades
+    </h2>
+
+    <div class="skill">
+        <div class="skill-info">
+            <p><i class="fa-brands fa-python"></i> Python</p>
+            <p>85%</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" data-progress="85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <p><i class="fa-solid fa-database"></i> MySQL</p>
+            <p>80%</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" data-progress="80%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <p><i class="fa-brands fa-java"></i> Java</p>
+            <p>75%</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" data-progress="75%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <p><i class="fa-brands fa-html5"></i> HTML & CSS</p>
+            <p>65%</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" data-progress="65%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-info">
+            <p><i class="fa-brands fa-js"></i> JavaScript</p>
+            <p>60%</p>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" data-progress="60%"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTATO (HOME) ================= -->
+<section class="pagina-contato">
+    <div class="contato-wrapper">
+        <h2 class="section-title">
+            <i class="fa-solid fa-envelope"></i> Contato
+        </h2>
+
+        <div class="contato-box">
+            <a href="mailto:edduardohenrique76@gmail.com" class="barra-contato">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+
+            <a href="https://github.com/Eduardotzz" class="barra-contato">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+            <a href="https://wa.me/5531995570079" class="barra-contato">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const bars = document.querySelectorAll('.progress-bar');
+    bars.forEach(bar => {
+        const value = bar.getAttribute('data-progress');
+        setTimeout(() => {
+            bar.style.width = value;
+        }, 500);
+    });
+});
+</script>
+
+</body>
+</html>
